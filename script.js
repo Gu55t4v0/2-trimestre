@@ -6,72 +6,84 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você está pensando em comprar um carro novo e tem que decidir entre um carro elétrico e um carro a gasolina. Qual é o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Um carro elétrico parece ser uma escolha sustentável e moderna.",
+                afirmacao: "Optou por um carro elétrico pensando na preservação ambiental e na inovação tecnológica."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Um carro a gasolina pode ser mais barato e ter mais opções de modelos.",
+                afirmacao: "Preferiu um carro a gasolina por questões de custo inicial e variedade de modelos disponíveis."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Você está fazendo uma viagem longa e precisa escolher um carro para alugar. Qual fator é mais importante para você?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "O conforto do carro é fundamental para uma viagem tranquila.",
+                afirmacao: "Escolheu um carro com assentos confortáveis e um bom sistema de climatização para garantir uma viagem mais agradável."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "A economia de combustível é a prioridade para economizar durante a viagem.",
+                afirmacao: "Optou por um carro que ofereça boa eficiência de combustível para economizar em despesas durante a viagem."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Você está planejando a manutenção do seu carro. Qual aspecto você considera mais importante?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Manter o motor em ótimo estado para garantir o desempenho do veículo.",
+                afirmacao: "Focou na manutenção do motor para assegurar que o carro continue funcionando bem e com boa performance."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Verificar e substituir os pneus regularmente para garantir a segurança.",
+                afirmacao: "Prioriza a verificação e substituição dos pneus para manter a segurança e a dirigibilidade do carro."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você está escolhendo um carro para uso diário na cidade. Qual característica é essencial para você?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "O carro deve ter um bom consumo urbano para economizar em combustível.",
+                afirmacao: "Escolheu um carro com excelente economia de combustível em ambientes urbanos para reduzir custos diários."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Precisa ter um tamanho compacto para facilitar o estacionamento e a mobilidade na cidade.",
+                afirmacao: "Optou por um carro compacto para facilitar o estacionamento e a movimentação em ruas e avenidas da cidade."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você está participando de uma competição de carros clássicos. Qual aspecto do carro você considera mais importante?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "A autenticidade e o estado de conservação original do carro são cruciais.",
+                afirmacao: "Enfatizou a preservação da autenticidade e do estado original do carro para competir em um evento de carros clássicos."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "A modificação estética e a personalização do carro podem impressionar mais.",
+                afirmacao: "Optou por personalizar o carro para se destacar na competição com modificações estéticas e inovadoras."
             }
         ]
     },
+    {
+        enunciado: "Você está pensando em vender seu carro atual e comprar um modelo mais novo. O que você faz primeiro?",
+        alternativas: [
+            {
+                texto: "Pesquisas de mercado para entender o valor de venda do seu carro e as opções disponíveis.",
+                afirmacao: "Faz pesquisas detalhadas sobre o valor do seu carro no mercado e as melhores ofertas para um modelo novo."
+            },
+            {
+                texto: "Verifica quais são as características mais desejadas no mercado para escolher o novo carro.",
+                afirmacao: "Foca em identificar as características mais procuradas no mercado para garantir que o novo carro atenda às suas necessidades."
+            }
+        ]
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
